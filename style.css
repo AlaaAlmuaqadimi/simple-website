@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif ;
+}
+body{
+    background-color: #1b1b1b;
+}
+
+nav{
+    position: fixed;
+    background-color: rgb(128, 83, 26);
+    width: 100%;
+    padding: 25px 0;
+    z-index: 100;
+}
+nav .menu{
+    max-width: 1250px;
+    background-color: rgb(128, 83, 26);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.menu ul{
+    list-style: none;
+    display: inline-flex; 
+}
+
+.menu ul li{
+    margin: 0 10px;
+    list-style: none;
+}
+
+.menu ul li a{ 
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 6px 13px;
+
+}
+
+.menu ul li :hover{   
+    background-color:rgb(156, 123, 81);
+    color:fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.img{
+    background: url(images/white-cup-steaming-coffee-placed-600nw-2536026327.webp) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.img::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%); 
+    border-radius: 10px;
+    padding: 0 20px;
+    text-align: center;
+    
+}
+
+.center .title1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.center .title2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.center .btns{
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.center .btns button{
+    background-color: rgb(128, 83, 26);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+    outline: none;
+}
+
+.center .btns button:first-child{
+    color: #fff;
+    background: none;
+    border: #fff 2px solid;
+    margin-right: 20px;
+}
+
+.center .btns button:first-child:hover{
+    color: #000;
+    background: #fff;
+}
+
+.center .btns button:last-child:hover{
+    color: #000;
+    background: #fff;
+}
